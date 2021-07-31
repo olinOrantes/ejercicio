@@ -1,188 +1,238 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-      nav ul ul {
-        display: none;
-      }
-      nav ul li:hover > ul {
-        display: block;
-      }
-      nav ul:after {
-        content: "";
-        clear: both;
-        display: block;
-      }
-      nav ul li {
-        float: left;
-        position: relative;
-        list-style-type: none;
-      }
-      nav ul li:hover {
-        background: rgba(19, 20, 123, 0.67);
-      }
-      nav ul li:hover a {
-        color: #fff;
-      }
-      nav ul li a {
-        display: block;
-        padding: 20px 30px;
-        color: #ffffff;
-        text-decoration: none;
-        background-color: rgba(35, 17, 134, 0.8);
-        font-family: sans-serif;
-      }
-      nav ul ul {
-        background: #5f6975;
-        padding: 0;
-        position: absolute;
-        top: 100%;
-      }
-      nav ul ul li {
-        float: none;
-        position: relative;
-      }
-      nav ul ul li a {
-        padding: 15px 10px;
-        color: #ffffff;
-        text-transform: uppercase;
-      }
-      nav ul ul li a:hover {
-        background: rgba(19, 20, 123, 0.67);
-      }
 
+<head>
+    <style>
+        @media (max-width: 320px) {
+            body {
+                font-size: .6em;
+            }
+        }
+        
+        @media screen {
+            h1 {
+                color: red;
+            }
+        }
+        
+        @media print {
+            h1 {
+                color: black;
+            }
+        }
+        
+        @media (min-width: 1000px) {
+            body {
+                align: 20px;
+            }
+            div {
+                text-align: center;
+            }
+        }
+        
+        nav ul ul {
+            display: none;
+        }
+        
+        nav ul li:hover>ul {
+            display: block;
+        }
+        
+        nav ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        nav ul li {
+            float: left;
+            position: relative;
+            list-style-type: none;
+        }
+        
+        nav ul li:hover {
+            background: rgba(19, 20, 123, 0.67);
+        }
+        
+        nav ul li:hover a {
+            color: #fff;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 20px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgba(35, 17, 134, 0.8);
+            font-family: sans-serif;
+        }
+        
+        nav ul ul {
+            background: #5f6975;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+        
+        nav ul ul li {
+            float: none;
+            position: relative;
+        }
+        
+        nav ul ul li a {
+            padding: 15px 10px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        nav ul ul li a:hover {
+            background: rgba(19, 20, 123, 0.67);
+        }
+        
         .ul {
-        list-style: none;
+            list-style: none;
         }
+        
         .ul li::before {
-        content: "✅";
-        display: inline-block;
-        margin-right: 0.2rem;
+            content: "✅";
+            display: inline-block;
+            margin-right: 0.2rem;
         }
-
+        
         .header {
-        height: 40px;
-        padding: 20px 20px 0;
-        background: #e1e1e1;
-      }
-      .main-content {
-        height: 60vh;
-        padding: 20px;
-      }
-      footer {
-        padding: 10px 20px;
-        background: rgba(19, 20, 123, 0.67);
-        color: white;
-      }
-      a {
-        color: #00aaff;
-      }
+            height: 40px;
+            padding: 20px 20px 0;
+            background: #e1e1e1;
+        }
+        
+        .main-content {
+            height: 60vh;
+            padding: 20px;
+        }
+        
+        footer {
+            padding: 10px 20px;
+            background: rgba(19, 20, 123, 0.67);
+            color: white;
+        }
+        
+        a {
+            color: #00aaff;
+        }
+        
+        h3 {
+            white-space: pre-line;
+            color: rgba(19, 20, 123, 0.67);
+            font-size: 25px;
+        }
+        
+        aside {
+            display: block;
+            margin: 15px;
+            width: 20%;
+            height: 45em;
+            border-width: 0.1em;
+            border-style: dashed;
+            border-color: black;
+            border: 1px dashed blue;
+            float: right;
+        }
+        
+        div {
+            background-image: linear-gradient(to right, blue, red);
+            /* Primer ejemplo */
+            background-image: linear-gradient(to right, blue, yellow, red);
+            /* Segundo ejemplo */
+        }
+    </style>
+</head>
 
-      h3 {
-        white-space: pre-line;
-    color: rgba(19, 20, 123, 0.67);
-    font-size: 25px;
-    }
-
-    aside
-{
-    display : block;
-    margin: 15px;
-    width : 20%;
-    height : 45em;
-    border-width : 0.1em;
-    border-style : dashed;
-    border-color : black;
-    border: 1px dashed blue;
-    float: right;
-}
-        </style>
-    </head>
-    <body>
-        <header>
-            <div>
-                <a href="/" title="Go to home page">
-                    <img
-                        style="float:left;"
-                        src="logo.png"
-                        alt="Site logo"
-                        width="60"
-                        height="60"
-                    >
-                </a>
-            </div>
-            <div>
-                <h2 style="text-align:center;">DESARROLLO WEB</h2>
-                <h3 style="text-align:center;">
-                    Introduccion a HTML 5
+<body>
+    <header>
+        <div>
+            <a href="/" title="Go to home page">
+                <img style="float:left;" src="logo.png" alt="Site logo" width="60" height="60">
+            </a>
+        </div>
+        <div>
+            <h2 style="text-align:center;">DESARROLLO WEB</h2>
+            <h3 style="text-align:center;">
+                Introduccion a HTML 5
                 </h2>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="elements.html">ELEMENTOS</a>
-                    </li>
-                    <li>
-                        <a href="atributes.html">ATRIBUTOS</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <aside aria-labelledby="sidebar1">
+        </div>
+        <nav>
             <ul>
-                <li style="margin-left: auto;margin-right: auto;width: 8em">
-                    <a href="#">OPCION 1</a>
+                <li>
+                    <a href="#">INICIO</a>
                 </li>
-                <li style="margin-left: auto;margin-right: auto;width: 8em">
-                    <a href="#">OPCION 1</a>
+                <li>
+                    <a href="elements.html">ELEMENTOS</a>
                 </li>
-                <li style="margin-left: auto;margin-right: auto;width: 8em">
-                    <a href="#">OPCION 3</a>
-                </li>
-                <li style="margin-left: auto;margin-right: auto;width: 8em">
-                    <a href="#">OPCION 4</a>
+                <li>
+                    <a href="atributes.html">ATRIBUTOS</a>
                 </li>
             </ul>
-        </aside>
-        <main>
-            <article>
-                <div>
-                    <h1>Definicion</h1>
-                    <p>Es el lenguaje que se utiliza en la World Wide Web, el ecosistema de paginas de Internet, es el HTML. Su nombre son las siglas de HyperText Markup Language, que significa literalmente Lenguaje de marcado de hipertexto. Es el estandar con el que estan programadas todas las webs, y aunque algunas puedan tener elementos o fragmentos programados en otros lenguajes, siempre tienen que ser "encajados" en el total con este lenguaje.</p>
-                </div>
-                <div>
-                    <h1>Aplicaciones</h1>
-                    <h3>Paginas web multimedia:</h3>
-                    <p>Gracias a etiquetas como &lt;video&gt; y &lt;audio&gt; podemos aniadir videos o audio. Ya no es necesario utilizar Adobe Flash o cualquier otro complemento (plugin). La diferencia es que ahora, con el HTML5, el tamanio del archivo final de tu pagina es mas reducido, ya que todo ocurre desde el navegador..</p>
-                    <h3>Geolocalizacion:</h3>
-                    <p>Algunas de las ventajas del HTML es que te permite ofrecer al usuario el contenido de tu sitio web en su idioma basandote en su ubicacion o mostrarle un sitio web u otro segun cual sea su origen.</p>
-                    <h3>Animaciones:</h3>
-                    <p>La etiqueta &lt;canvas&gt; es la responsable de que puedas crear animaciones en 2D. Mediante una interfaz de programacion de aplicaciones (API) puedes dibujar elementos en 2D y animarlos.</p>
-                    <h3>Aplicaciones web:</h3>
-                    <p>El HTML5 te permite desarrollar aplicaciones web accesibles para ordenador, tableta o movil, asi como acceder a la aplicacion web con un simple URL. Esto contrasta con la aplicacion movil, puesto que no ofrece esta accesibilidad.</p>
-                </div>
-                <h2>Versiones</h2>
-                <ul class="ul">
-                    <li class="li">
-                        <a href="https://uniwebsidad.com/libros/xhtml/capitulo-1/breve-historia-de-html">2.0</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://moisesrbb.tripod.com/cursohtm.html">3.2</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://desarrolloweb.com/articulos/1049.php">4.0</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://www.arkaitzgarro.com/html5/capitulo-1.html">5</a>
-                    </li>
-                </ul>
-            </article>
-        </main>
-        <footer>
-            <p>Company ©OlinOrantes. Todos los derechos reservados.</p>
-        </footer>
-    </body>
+        </nav>
+    </header>
+    <aside aria-labelledby="sidebar1">
+        <ul>
+            <li style="margin-left: auto;margin-right: auto;width: 8em">
+                <a href="#">OPCION 1</a>
+            </li>
+            <li style="margin-left: auto;margin-right: auto;width: 8em">
+                <a href="#">OPCION 1</a>
+            </li>
+            <li style="margin-left: auto;margin-right: auto;width: 8em">
+                <a href="#">OPCION 3</a>
+            </li>
+            <li style="margin-left: auto;margin-right: auto;width: 8em">
+                <a href="#">OPCION 4</a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <div>
+                <h1>Definicion</h1>
+                <p>
+                    Es el lenguaje que se utiliza en la World Wide Web, el ecosistema de paginas de Internet, es el HTML. Su nombre son las siglas de HyperText Markup Language, que significa literalmente Lenguaje de marcado de hipertexto. Es el estandar con el que estan
+                    programadas todas las webs, y aunque algunas puedan tener elementos o fragmentos programados en otros lenguajes, siempre tienen que ser "encajados" en el total con este lenguaje.
+                </p>
+            </div>
+            <div>
+                <h1>Aplicaciones</h1>
+                <h3>Paginas web multimedia:</h3>
+                <p>
+                    Gracias a etiquetas como &lt;video&gt; y &lt;audio&gt; podemos aniadir videos o audio. Ya no es necesario utilizar Adobe Flash o cualquier otro complemento (plugin). La diferencia es que ahora, con el HTML5, el tamanio del archivo final de tu pagina es
+                    mas reducido, ya que todo ocurre desde el navegador..
+                </p>
+                <h3>Geolocalizacion:</h3>
+                <p>Algunas de las ventajas del HTML es que te permite ofrecer al usuario el contenido de tu sitio web en su idioma basandote en su ubicacion o mostrarle un sitio web u otro segun cual sea su origen.</p>
+                <h3>Animaciones:</h3>
+                <p>La etiqueta &lt;canvas&gt; es la responsable de que puedas crear animaciones en 2D. Mediante una interfaz de programacion de aplicaciones (API) puedes dibujar elementos en 2D y animarlos.</p>
+                <h3>Aplicaciones web:</h3>
+                <p>El HTML5 te permite desarrollar aplicaciones web accesibles para ordenador, tableta o movil, asi como acceder a la aplicacion web con un simple URL. Esto contrasta con la aplicacion movil, puesto que no ofrece esta accesibilidad.</p>
+            </div>
+            <h2>Versiones</h2>
+            <ul class="ul">
+                <li class="li">
+                    <a href="https://uniwebsidad.com/libros/xhtml/capitulo-1/breve-historia-de-html">2.0</a>
+                </li>
+                <li class="li">
+                    <a href="https://moisesrbb.tripod.com/cursohtm.html">3.2</a>
+                </li>
+                <li class="li">
+                    <a href="https://desarrolloweb.com/articulos/1049.php">4.0</a>
+                </li>
+                <li class="li">
+                    <a href="https://www.arkaitzgarro.com/html5/capitulo-1.html">5</a>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Company ©OlinOrantes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
 </html>
