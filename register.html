@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+
+<body>
+    <!--COMENTARIO-->
+    <div class="grid_container">
+
+        <header class="grid_header">
+            <h1>REGISTRO</h1>
+        </header>
+
+        <!-- <aside class="grid_leftaside">
+            <h3>LEFT ASIDE</h3>
+        </aside> -->
+
+        <main class="grid_main">
+            <form action="">
+
+                <fieldset style="margin: 5px;">
+                    <legend style="font-weight: bold;text-align:center;">Datos Personales</legend>
+
+                    <div class="grid_data">
+                        <label for="idIdentifacion">Documento de Identificación</label>
+                        <input type="number" name="txtIdentificacion" id="idIdentifacion" required placeholder="ingrese solo números">
+
+                    </div>
+
+                    <div class="grid_data">
+                        <label for="idNombre">Nombre</label>
+                        <input type="text" id="idNombre" name="txtNombre" required placeholder="ingrese el nombre completo">
+                    </div>
+
+                    <div class="grid_data">
+                        <label for="idDireccion">Dirección</label>
+                        <input type="text" name="txtDireccion" required id="idDireccion" placeholder="solamente dirección del domicilio">
+                    </div>
+
+                    <div class="grid_data">
+                        <label for="idPais">País</label>
+                        <select name="cmbPais" id="idPais" required>
+                                                        <option value="Honduras">Honduras</option>
+                                                        <option value="Guatemala" selected>Guatemala</option>
+                                                        <option value="Nicaragua">Nicaragua</option>
+                                                </select>
+                    </div>
+
+                    <div class="grid_data">
+                        <label for="idEmail">E-Mail</label>
+                        <input type="email" name="txtEmail" id="idEmail">
+                    </div>
+
+                    <div class="grid_data">
+                        <label for="idObservaciones">Observaciones</label>
+                        <textarea name="txtObservaciones" id="idObservaciones" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="grid_data">
+                        <button type="submit" style="grid-column: 2;">Enviar Datos</button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </main>
+
+        <!-- <aside class="grid_rightaside">
+            <h3>RIGHT ASIDE</h3>
+        </aside> -->
+
+        <footer class="grid_footer">
+            <p>Company ©OlinOrantes. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
